@@ -1,0 +1,60 @@
+<div *ngFor="let id of ids">
+  Id is {{id}}
+  <div ngSwitch="{{id%2}}">
+    <div *ngSwitchCase="'0'"[ngClass]="'one'">This is even.</div>
+    <div *ngSwitchCase="'1'"[ngClass]="'two'">This is odd.</div>
+    <div *ngSwitchDefault>Nothing Found.</div>
+  </div>
+</div>
+
+<div [ngSwitch]="color">
+  <h2 style="color: red;" *ngSwitchCase="'red'">
+  Red Color
+  </h2>
+  <h2 style="color: green;" *ngSwitchCase="'green'">
+  Green Color
+  </h2>
+  <h2 style="color: blue;" *ngSwitchCase="'blue'">
+  Blue Color
+  </h2>
+  <h2 style="color:gray;" *ngSwitchDefault>
+  Default Color
+  </h2>
+</div>
+
+<div>
+  <h2><u>ngStyle Example</u></h2>
+  <h1 style="color: green;">Good Morning</h1>
+  <h1 [ngStyle]="{'color':'blue'}">Good Morning</h1>
+  <h1 [ngStyle]="{'color': textcolor}">Good Morning</h1>
+  <h1 [ngStyle]="{'color':textcolor==='black'?'blue':'green'}"></h1>
+</div>
+<div>
+  <h1>ngClass Example</h1>
+  <h1 [ngClass]="'changecolor'">Hello</h1>
+  <h1 [ngClass]="'changecolor bgcolor'">Hello</h1>
+  <h1 [ngClass]="styleColor">Hello</h1>
+  <div>
+    <h1 [ngClass]="styleColor==='font'?'bgcolor':'changecolor'">Hello</h1>
+  </div>
+</div>
+<h1 appHighlight>Bye</h1>
+
+<h1 appDivts>Aris</h1>
+<div class="pipe">
+  <h1><u>Built-In Pipe</u></h1>
+  <h1>{{'ARIS'|lowercase}}</h1>
+  <h1>{{'aris'| uppercase}}</h1>
+  <h1>{{'140'|currency}}</h1>
+  <h1>{{dateExample |date}}</h1>
+  <h1>{{'0.5'|percent}}</h1>
+  <h1><u>Parameters pipe</u></h1>
+  <h1>{{'150'|currency:'GBP'}}</h1>
+  <h1>{{dateExample |date:'long'}}</h1>
+  <h1>{{dateExample |date:'short'}}</h1>
+  <h1>{{dateExample |date:'dd/MM/yy'}}</h1>
+  <h1>{{'0.5'|percent:'3.2-3'}}</h1>
+  <h1><u>Chaining Pipes</u></h1>
+  <h1>{{dateExample |date | uppercase}}</h1>
+  <h1>{{'150'|currency:'YEN' | lowercase}}</h1>
+</div>

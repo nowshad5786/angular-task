@@ -1,0 +1,27 @@
+<h1 style="color: rgba(30, 187, 135, 0.815);">Good morning Everyone</h1>
+
+<div class="colaps">
+    <app-nav-bar></app-nav-bar>
+    <app-nav-bar></app-nav-bar>
+    <app-nav-bar></app-nav-bar>
+</div>
+
+<app-login></app-login>
+<app-aris-global></app-aris-global>
+<app-footer></app-footer>
+<button (click)="getN('wayne')">click me</button>
+<br><br>
+<button (click)="names()">Click</button>
+<br><br>
+<p>KeyUp</p>
+<input type ="text" (keyup)="getName()">
+<br><br>
+<p>KeyDown</p>
+<input type ="text" (keydown)="getM()">
+<br><br>
+<p>Mouse Hover</p>
+<button (mouseover)="getP()" class="hover">Clicked</button>
+<br>
+<input type="text" value={{fname}} disabled={{disabledBox}}>
+<input type="text" [value]="fname"[disabled]="disabledBox">
+<button (click)="enableInput()">Enable Me</button>

@@ -1,0 +1,32 @@
+.changecolor
+{
+    color: rgb(132, 0, 255);
+    width: 100px;
+    height: 100px;
+
+}
+.bgcolor
+{
+    background-color: rgb(227, 255, 127);
+    border: 1px solid rgb(18, 15, 218);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+.newfont
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #4bc475;
+    border: 1px solid #000;
+    text-align: center;
+}
+.pipe
+{
+    border:2px solid lightseagreen;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: lightyellow;
+    color: #033a1b;
+}
